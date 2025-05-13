@@ -9,6 +9,6 @@ pub fn main() u8 {
     defer std.heap.page_allocator.free(content);
 
     std.debug.print("File {s} content:\n{s}", .{fileName, content});
-
+    
     return 0;
 }
